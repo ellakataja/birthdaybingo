@@ -35,20 +35,6 @@ li {
     "Lucida Sans", Arial, sans-serif;
 }
 
-/*Header*/
-.img_title {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 8vw;
-  text-shadow: 2px 2px 4px rgb(22, 31, 19);
-}
-
 /*Navbar*/
 .navbar {
   list-style-type: none;
@@ -172,12 +158,6 @@ li a:hover:not(.active) {
 }
 
 @media only screen and (min-width: 600px) {
-  /*Header*/
-  .img_title {
-    top: 30%;
-    left: 50%;
-  }
-
   /*About*/
   .skills_list_container {
     flex-direction: row;
