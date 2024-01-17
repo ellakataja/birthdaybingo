@@ -78,7 +78,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #517a51;
+  background-color: #2d65b2;
 }
 
 /*About*/
@@ -100,7 +100,7 @@ li a:hover:not(.active) {
 }
 
 .tools_container {
-  background-color: #d0e3d1;
+  background-color: #cfe0f4;
   padding: 10px 80px;
   border-radius: 5px;
   width: 30vw;
@@ -108,7 +108,7 @@ li a:hover:not(.active) {
 
 .languages_container {
   margin-top: 20px;
-  background-color: #d0e3d1;
+  background-color: #cfe0f4;
   padding: 10px 80px;
   border-radius: 5px;
   width: 30vw;
@@ -155,6 +155,11 @@ li a:hover:not(.active) {
   height: auto;
   border: 5px solid #191616;
   border-radius: 15px;
+}
+
+/*Contacts*/
+.contacts h1 {
+  margin-top: 80px;
 }
 
 /*Footer*/
