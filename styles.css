@@ -41,6 +41,12 @@ li {
 }
 
 /*Header*/
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .header img {
   margin-bottom: -5px;
 }
@@ -78,6 +84,20 @@ li a:hover:not(.active) {
 }
 
 /*About*/
+.homeBanner1 {
+  animation: fadeIn 3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.homeBanner2 {
+  animation: fadeOut 3s;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .about p {
   width: 80vw;
   text-align: left;
@@ -108,21 +128,27 @@ li a:hover:not(.active) {
 }
 
 /*My work*/
-.my_work h3 {
+.workBanner1 {
+  animation: fadeOut 3s;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.workBanner2 {
+  animation: fadeIn 3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.my_work {
   width: 80vw;
   margin: 20px auto 10px auto;
 }
 
 .my_work p {
-  width: 80vw;
-  margin: 20px auto 40px auto;
   text-align: left;
-}
-
-.my_work img {
-  width: 80%;
-  height: auto;
-  margin-left: 10vw;
 }
 
 .villiyrtti_images {
@@ -136,19 +162,27 @@ li a:hover:not(.active) {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-right: 10vw;
+  margin-top: 10px;
+}
+
+.binny_images {
+  text-align: center;
 }
 
 .binny_images img {
-  width: 80vw;
+  width: 50%;
   height: auto;
   border: 5px solid #191616;
   border-radius: 15px;
+  margin-top: 10px;
 }
 
 /*Contacts*/
 .contacts p {
   text-align: left;
+}
+
+.contacts {
   width: 80vw;
   margin: 10px auto 0px auto;
 }
@@ -160,6 +194,25 @@ li a:hover:not(.active) {
   padding: 15px;
   color: white;
   font-size: small;
+}
+
+/*Animations*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -202,13 +255,13 @@ li a:hover:not(.active) {
   .binny_images img {
     width: 20vw;
     height: auto;
+    margin: auto;
   }
 
   .binny_images {
     display: flex;
     flex-direction: row-reverse;
-    text-align: right;
-    margin-right: 10%;
+    text-align: center;
   }
 
   .ask_binny {
