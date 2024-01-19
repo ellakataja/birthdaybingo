@@ -9,7 +9,7 @@ body {
 }
 
 .content {
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 img {
@@ -38,6 +38,11 @@ p {
 li {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+/*Header*/
+.header img {
+  margin-bottom: -5px;
 }
 
 /*Navbar*/
@@ -139,6 +144,13 @@ li a:hover:not(.active) {
   height: auto;
   border: 5px solid #191616;
   border-radius: 15px;
+}
+
+/*Contacts*/
+.contacts p {
+  text-align: left;
+  width: 80vw;
+  margin: 10px auto 0px auto;
 }
 
 /*Footer*/
