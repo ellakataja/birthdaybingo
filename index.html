@@ -3,78 +3,113 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Ella Kataja homepage</title>
+    <title>Ella Kataja Portfolio</title>
     <link rel="icon" href="./img/EEK-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/085184ff6d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="content">
+    <div class="content" id="top">
+      <ul class="navbar">
+        <div class="tabs">
+          <li><a class="active" href="index.html">Home</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+          <div id="tabs2" class="tabs2">
+            <li>
+              <a href="villiYrttiseikkailu.html">Villi yrttiseikkailu</a>
+            </li>
+            <li><a href="askBinny.html">Ask Binny</a></li>
+            <li><a href="aboutMe.html">About me</a></li>
+          </div>
+        </div>
+      </ul>
       <div class="header">
         <img
-          class="homeBanner2"
-          src="./img/portfolioTaustaYö.png"
+          class="homeBanner"
+          src="./img/portfolioTausta2.png"
           alt="Drawing of weed on a night sky"
-          width="2000"
-          height="1700"
-        />
-        <img
-          class="homeBanner1"
-          src="./img/portfolioTausta.png"
-          alt="Drawing of weed on a blue sky"
-          width="2000"
-          height="1700"
+          width="1690"
+          height="394"
         />
       </div>
-      <ul class="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="myWork.html">My work</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-      </ul>
-      <div class="about">
-        <h1>About me</h1>
-        <p>
-          I am a third year Business Information Systems student. My main
-          focuses are frontend, UI/UX desing, and web and mobile development. In
-          my studies I have been working in project groups as a scrum master,
-          graphic designer, UI/UX designer and a frontend developer.
-          <br />
-          As a person, I am an organized to-do list lover, who likes to think
-          out-of-the-box. In my free time, I like to try new foods, spend time
-          with my friends, and learn all kinds of new things.
-        </p>
-        <div class="skills_list_container">
-          <div class="tools_container">
-            <h3>Tools and skills:</h3>
-            <ul class="tools_list">
-              <li>Github</li>
-              <li>Figma</li>
-              <li>Miro</li>
-              <li>Mural</li>
-              <li>UI/UX desing</li>
-              <li>Graphic design</li>
-              <li>Blender</li>
-              <li>Communication skills</li>
-              <li>Project management</li>
-              <li>Scrum</li>
-              <li>SPSS</li>
-              <li>Gimp</li>
-              <li>Adobe Photoshop</li>
-            </ul>
+      <a href="#top">
+        <div class="arrow">
+          <span>&#8593;</span>
+        </div>
+      </a>
+      <div class="homePageInnerContent">
+        <h2 class="homePageHeader">Choose a Case to Learn More About</h2>
+        <div class="sneakPeeksDiv">
+          <div class="sneakPeek">
+            <a href="villiYrttiseikkailu.html">
+              <img
+                class="miniImg"
+                src="./img/villiYrttiSneakPeek.png"
+                alt="Mockup pictures of a mobile game"
+                width="595"
+                height="435"
+              />
+              <div class="miniText">
+                <h3>Villi yrttiseikkailu</h3>
+                <p>
+                  An Android mobile game that is available on Google Play Store.
+                  <br />
+                  Our team’s game won our field of studies annual game project’s
+                  best game award.
+                </p>
+                <p>Scrum Master, UI/UX Designer, and Graphic Designer</p>
+              </div>
+            </a>
           </div>
-          <div class="languages_container">
-            <h3>Languages, libraries and frameworks:</h3>
-            <ul class="languages_list">
-              <li>HTML/css</li>
-              <li>JavaScript</li>
-              <li>EcmaScript</li>
-              <li>Python</li>
-              <li>React</li>
-              <li>Java</li>
-              <li>Kotlin</li>
-              <li>Swift</li>
-              <li>MySQL</li>
-              <li>Node.js</li>
-            </ul>
+          <div class="sneakPeek">
+            <a href="askBinny.html">
+              <img
+                class="miniImg"
+                src="./img/askBinnySneakPeek.png"
+                alt="Mockup pictures of a website"
+                width="595"
+                height="435"
+              />
+              <div class="miniText">
+                <h3>Ask Binny</h3>
+                <p>
+                  A recycling website made for TAMK’s waste management.
+                  <br />
+                  The project was done together with the Munich University of
+                  Applied Sciences.
+                </p>
+                <p>Front-end Developer and UI/UX Designer</p>
+              </div>
+            </a>
           </div>
+        </div>
+        <div class="aboutMeSneakPeek">
+          <a href="aboutMe.html">
+            <div class="aboutMeMiniText">
+              <h3>About Me</h3>
+              <p>
+                I am a 3rd year Business Information Systems student. My
+                strengths are UI & UX Design, project work, and front-end
+                development.
+                <br />
+                <br />
+                I am a creative out-of-the-box thinker who gets easily along
+                with all kinds of people. My motivation for design comes from my
+                passion for arts and psychology.
+              </p>
+            </div>
+            <img
+              class="headImg"
+              src="./img/CVnaamaNeliö.jpg"
+              alt="Head shot of the author"
+              width="400"
+              height="400"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -83,7 +118,18 @@
         <p>This is Ella Kataja's homepage</p>
         <p>Images used on the page are made and owned by Ella Kataja</p>
         <p>Google Play and the Google Play logo are trademarks of Google LLC</p>
+        <p>2024</p>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("tabs2");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

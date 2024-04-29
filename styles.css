@@ -21,34 +21,36 @@ h1 {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin-top: 25px;
 }
 
-h3 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-p {
-  text-align: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
+h2,
+h3,
+h4,
+p,
 li {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
-/*Header*/
-.header {
-  position: relative;
-  top: 0;
-  left: 0;
+/*Arrow*/
+.arrow {
+  position: fixed;
+  right: 5vw;
+  bottom: 3vh;
+  background-color: #353430;
+  padding: 5px 15px 10px 15px;
+  box-shadow: #272622 2px 2px 4px;
+  border-radius: 4px;
 }
 
+.arrow span {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+/*Header*/
 .header img {
-  margin-bottom: -5px;
+  margin-bottom: 20px;
 }
 
 /*Navbar*/
@@ -75,116 +77,43 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover:not(.active),
+.active {
   background-color: #111;
 }
 
-.active {
-  background-color: #2d65b2;
+.tabs {
+  margin-left: 3vw;
 }
 
-/*About*/
-.homeBanner1 {
-  animation: fadeIn 3s;
-  position: absolute;
-  top: 0;
-  left: 0;
+.tabs2 {
+  display: none;
 }
 
-.homeBanner2 {
-  animation: fadeOut 3s;
-  position: relative;
-  top: 0;
-  left: 0;
+.tabs2 li {
+  width: 100vw;
 }
 
-.about p {
-  width: 80vw;
-  text-align: left;
-  margin: 20px auto 40px auto;
-  text-wrap: wrap;
-}
-
-.skills_list_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 14vw;
-}
-
-.tools_container {
-  background-color: #cfe0f4;
-  padding: 10px 80px;
-  border-radius: 5px;
-  width: 30vw;
-}
-
-.languages_container {
-  margin-top: 20px;
-  background-color: #cfe0f4;
-  padding: 10px 80px;
-  border-radius: 5px;
-  width: 30vw;
-}
-
-/*My work*/
-.workBanner1 {
-  animation: fadeOut 3s;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.workBanner2 {
-  animation: fadeIn 3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.my_work {
-  width: 80vw;
-  margin: 20px auto 10px auto;
-}
-
-.my_work p {
-  text-align: left;
-}
-
-.villiyrtti_images {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.villiyrtti_links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.fa-bars {
+  color: #ece8e8;
   margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 62vw;
+  font-size: 25px;
 }
 
-.binny_images {
-  text-align: center;
-}
-
-.binny_images img {
-  width: 50%;
-  height: auto;
-  border: 5px solid #191616;
-  border-radius: 15px;
-  margin-top: 10px;
-}
-
-/*Contacts*/
-.contacts p {
-  text-align: left;
-}
-
-.contacts {
+/*Inner Content General*/
+.innerContent {
   width: 80vw;
-  margin: 10px auto 0px auto;
+  margin: 10px auto 10px auto;
+}
+
+.innerContent a {
+  text-decoration: none;
+}
+
+.innerContent a:visited {
+  color: #111;
 }
 
 /*Footer*/
@@ -194,83 +123,842 @@ li a:hover:not(.active) {
   padding: 15px;
   color: white;
   font-size: small;
+  text-align: center;
 }
 
-/*Animations*/
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+/*Home Page*/
+.homePageInnerContent {
+  width: 90vw;
+  margin: 20px auto 10px auto;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.homePageInnerContent a {
+  text-decoration: none;
+}
+
+.homePageInnerContent a:visited {
+  color: #111;
+}
+
+.homePageHeader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sneakPeeksDiv {
+  margin-bottom: 60px;
+}
+
+.sneakPeek a {
+  text-decoration: none;
+  height: fit-content;
+}
+
+.sneakPeek .miniText {
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.miniText :last-child {
+  color: #7d7d7d;
+}
+
+/*About Me at Home Page*/
+.aboutMeSneakPeek {
+  margin-bottom: 100px;
+}
+
+.aboutMeSneakPeek a {
+  text-decoration: none;
+}
+
+.headImg {
+  width: 80%;
+  height: auto;
+  margin: 20px 20px 20px 20px;
+}
+
+/*Villi yrttiseikkailu*/
+.inThisCaseStudy {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  background-color: #f2e8b0;
+  width: fit-content;
+  padding: 5px 100px 20px 30px;
+  border-radius: 15px;
+  /*border: #111 solid 2px;*/
+}
+
+.inThisCaseStudy a,
+.inThisCaseStudy a:visited {
+  color: #111;
+  text-decoration: underline;
+}
+
+.inThisCaseStudy li {
+  margin-bottom: 5px;
+}
+
+.projectOverview {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.projectOverviewImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.playStoreImg {
+  margin: auto;
+  width: 80vw;
+  height: auto;
+}
+
+.villiYrttiImg {
+  margin-bottom: 22px;
+  margin-top: 23px;
+  width: 40vw;
+  height: auto;
+}
+
+.problem,
+.solution,
+.wireframes,
+.prototypes,
+.informationArchitecture,
+.usabilityTesting,
+.finalDesigns,
+.productSuccess {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.subHeadline {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.learningTheWildHerbs {
+  margin-bottom: 40px;
+}
+
+.wildHerbImgDiv {
+  flex-direction: row;
+}
+
+.wildHerbImg {
+  width: 30%;
+  height: auto;
+}
+
+.characterDevelopment {
+  margin-bottom: 40px;
+}
+
+.characterDevelopment iframe {
+  margin: auto 25px auto 0px;
+  width: 80vw;
+  height: auto;
+}
+
+.lookAndFeelDiv {
+  margin-bottom: 40px;
+}
+
+.lookAndFeelImgDiv {
+  display: flex;
+  flex: 50%;
+  flex-direction: row;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.buttonImg {
+  width: 55%;
+  height: auto;
+  margin: 5px auto 5px auto;
+}
+
+.bookBaseImg {
+  width: 70%;
+  height: auto;
+}
+
+.wireframeImg {
+  margin-top: 20px;
+}
+
+.informationArchitectureImg {
+  margin-top: 20px;
+}
+
+.prototypesDiv {
+  margin-bottom: 40px;
+}
+
+.usabilityDiv {
+  margin-bottom: 40px;
+}
+
+.usabilityDiv:first-of-type {
+  margin-bottom: 20px;
+}
+
+.usabilityTesting ol {
+  margin-bottom: 40px;
+}
+
+.usabilityImg2 {
+  margin-bottom: 20px;
+}
+
+.finalDesignDiv {
+  margin-bottom: 40px;
+}
+
+.productSuccessTextDiv {
+  flex-direction: column;
+}
+
+.productSuccessImg2 {
+  margin-top: 20px;
+}
+
+.whatILearned {
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+/*Ask Binny*/
+.inThisCaseStudy2 {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  background-color: #e1e5f4;
+  width: fit-content;
+  padding: 5px 100px 20px 30px;
+  border-radius: 15px;
+  /*border: #111 solid 2px;*/
+}
+
+.inThisCaseStudy2 a,
+.inThisCaseStudy2 a:visited {
+  color: #111;
+  text-decoration: underline;
+}
+
+.inThisCaseStudy2 li {
+  margin-bottom: 5px;
+}
+
+.binnyLogo {
+  margin-top: 20px;
+}
+
+.wireframeImgsDiv {
+  text-align: center;
+}
+
+.wireframeImgsDiv p {
+  margin-top: 3px;
+}
+
+.askBinnyWireframeImg {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.binnyPrototypeImg {
+  margin-bottom: 20px;
+  width: 80%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.binnyPrototypeImg2 {
+  margin-bottom: 20px;
+}
+
+.askBinnyIssueDiv {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.askBinnyIssueDiv p {
+  margin-top: 3px;
+  text-align: center;
+}
+
+.askBinnyUsabilityDiv2 {
+  margin-top: 40px;
+}
+
+.binnyUsabilityImg2 {
+  width: 80%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10px;
+}
+
+.binnyFinalDesignsImg {
+  width: 80%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 20px;
+}
+
+.binnyFinalDesignsImg2 {
+  margin-bottom: 40px;
+}
+
+.binnyTheBin {
+  display: none;
+}
+
+.askBinnyFeedback {
+  margin-top: 20px;
+}
+
+/*About me*/
+.aboutMeDiv {
+  margin-top: 40px;
+}
+
+.myExperience {
+  margin-top: 40px;
+}
+
+.headImg2 {
+  width: 90%;
+  height: auto;
+  margin: 20px 20px 20px 20px;
+}
+
+.contactsDiv h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contactsDiv li {
+  margin-bottom: 20px;
+}
+
+.fa-ul li a,
+.fa-ul li a:hover,
+.fa-ul li a:visited {
+  color: #111;
+  text-align: left;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 0px;
+  margin-left: 5px;
 }
 
 @media only screen and (min-width: 600px) {
-  /*About*/
-  .skills_list_container {
-    flex-direction: row;
-    margin-left: 0px;
+  /*General*/
+  /*Arrow*/
+  .arrow {
+    right: 3vw;
   }
 
-  .languages_container {
-    margin-left: 20vw;
+  /*Navbar*/
+  .tabs2 {
+    margin-left: 63vw;
+    display: block;
+  }
+
+  .tabs2 li {
+    width: auto;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  /*Home Page*/
+  .homePageHeader {
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+
+  .sneakPeeksDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .sneakPeek {
+    width: 43vw;
+    display: flex;
+  }
+
+  .sneakPeek a {
+    display: flex;
+  }
+
+  .miniImg {
+    width: 60%;
+    height: 60%;
+  }
+
+  .sneakPeek .miniText {
+    flex-direction: column;
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  .miniText h3 {
     margin-top: 0px;
-    width: auto;
   }
 
-  .tools_container {
-    width: auto;
+  /*About Me at Home Page*/
+  .aboutMeSneakPeek {
+    margin-bottom: 100px;
   }
 
-  /*My work*/
-  .villiyrtti_images {
+  .aboutMeSneakPeek a {
+    display: flex;
+    flex-direction: row;
+    width: 42vw;
+    margin-left: 47vw;
+    text-decoration: none;
+  }
+
+  .aboutMeSneakPeek h3 {
+    margin-top: 0px;
+  }
+
+  .headImg {
+    width: 35%;
+    height: 35%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+  }
+
+  /*Villi yrttiseikkailu*/
+  .projectOverview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .overview {
+    width: 70%;
+  }
+
+  .projectOverviewImgDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .playStoreImg {
+    width: 35vw;
+  }
+
+  .villiYrttiImg {
+    width: 10vw;
+  }
+
+  .myRole {
+    width: 20%;
+  }
+
+  .learningTheWildHerbs {
+    display: flex;
+  }
+
+  .learningTheWildHerbsText {
+    flex-direction: column;
+    flex: 40%;
+  }
+
+  .wildHerbImgDiv {
+    flex-direction: row;
+    flex: 50%;
+    margin-left: 35px;
+  }
+
+  .wildHerbImg {
+    width: 30%;
+    height: auto;
+  }
+
+  .characterDevelopment {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .characterDevelopment iframe {
+    width: 50vw;
+    height: 50vh;
+    margin-right: 25px;
+  }
+
+  .characterDevelopmentTextDiv {
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .lookAndFeelDiv {
+    display: flex;
     flex-direction: row;
   }
 
-  .my_work img {
-    width: 50%;
-    height: auto;
-    margin-left: 0px;
+  .lookAndFeelTextDiv {
+    flex-direction: column;
+    flex: 40%;
   }
 
-  .villiyrtti_links {
+  .finnishEnvironment {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .finnishEnvironmentImg {
+    width: 60%;
+    height: auto;
+    margin-right: 25px;
+  }
+
+  .finnishEnvironmentText {
+    flex-direction: column;
+  }
+
+  .wireframeImgDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wireframeImg {
+    width: 45%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .informationArchitectureImg {
+    margin-top: 20px;
+  }
+
+  .prototypesDiv {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .prototypesDiv2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+  }
+
+  .prototypeImg {
+    width: 50%;
+    height: 50%;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+
+  .prototypeBookImg {
+    margin: auto 35px auto auto;
+    width: 40%;
+    height: auto;
+  }
+
+  .usabilityDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+  }
+
+  .usabilityDiv2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .usabilityDiv:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  .usabilityTextDiv {
+    flex-direction: column;
+    margin-left: 25px;
+  }
+
+  .usabilityTesting ol {
+    margin-bottom: 40px;
+  }
+
+  .usabilityTextDiv2 {
+    flex-direction: column;
+    margin-right: 25px;
+  }
+
+  .usabilityImg {
+    width: 65%;
+    height: auto;
+  }
+
+  .usabilityImg2 {
+    width: 35%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .usabilityImg3 {
+    width: 35%;
+    height: auto;
+    margin-left: 25px;
+  }
+
+  .finalDesignDiv {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  .finalDesignTextDiv {
+    flex: 2;
+  }
+
+  .finalDesingsImgDiv {
+    flex: 3;
+    margin-left: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .productSuccess {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .productSuccessTextDiv {
+    flex-direction: column;
+  }
+
+  .productSuccessImg2 {
+    width: 40%;
+    height: auto;
+    margin-left: 40px;
+  }
+
+  .whatILearned {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  .whatILearnedTextDiv {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  /*Ask Binny*/
+  .binnyLogo {
+    width: 70%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .uiAndUxDesign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .uiAndUxDesignText {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
-    justify-content: center;
-    text-align: center;
+    width: 40%;
+  }
+
+  .uiAndUxDesignImg {
+    width: 70%;
+  }
+
+  .wireframeImgsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35px;
+  }
+
+  .askBinnyWireframeImg {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+  }
+
+  .binnyPrototypeImg {
+    width: 20%;
+    height: auto;
+    margin-left: 25px;
+  }
+
+  .binnyPrototypeImg2 {
+    width: 60%;
+    height: auto;
+    margin-right: 25px;
+    margin-top: -30px;
+  }
+
+  .binnyPrototypeImg {
+    width: 20%;
+    height: auto;
+    margin-left: 25px;
     margin-right: 0px;
   }
 
-  .binny_images img {
-    width: 20vw;
+  .binnyPrototypeImg2 {
+    width: 60%;
     height: auto;
-    margin: auto;
+    margin-right: 25px;
+    margin-top: -30px;
   }
 
-  .binny_images {
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
-  }
-
-  .ask_binny {
+  .askBinnyUsabilityImgsDiv {
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    justify-content: space-between;
   }
 
-  .ask_binny p {
-    width: 20vw;
+  .askBinnyIssueDiv {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 0px;
+  }
+
+  .askBinnyIssueDiv p {
+    text-align: left;
+  }
+
+  .askBinnyUsabilityDiv2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+  }
+
+  .askBinnyUsabilityText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .binnyUsabilityImg2 {
+    width: 25%;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+  .askBinnyFinalDesignsImgDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .binnyFinalDesignsImg {
+    width: 23%;
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .finalDesignImgs {
+    display: flex;
+    justify-content: center;
+    flex: 3;
+  }
+
+  .askBinnyFinalDesignDesktopDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .askBinnyFinalDesignText {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-right: 25px;
+  }
+
+  .binnyFinalDesignsImg2 {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .binnyTheBin {
+    width: 35%;
+    height: auto;
+    display: block;
+  }
+
+  .askBinnyFeedback {
+    width: 45%;
+    height: 50%;
+    margin-top: 20px;
+  }
+
+  /*About Me*/
+  .aboutMeDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+  }
+
+  .aboutMeTextDiv {
+    flex-direction: column;
+    width: 55%;
+    margin-right: 10vw;
+  }
+
+  .myExperience {
+    margin-top: 40px;
+  }
+
+  .headImg2 {
+    width: 70%;
+    height: auto;
+    margin: 10px auto 20px auto;
+  }
+
+  .contactsDiv {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+
+  .contactsDiv h3 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .contactsDiv li {
+    margin-bottom: 20px;
   }
 }

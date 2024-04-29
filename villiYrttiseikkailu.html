@@ -1,0 +1,754 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ella Kataja Portfolio</title>
+    <link rel="icon" href="./img/EEK-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/085184ff6d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="content" id="top">
+      <ul class="navbar">
+        <div class="tabs">
+          <li><a href="index.html">Home</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+          <div id="tabs2" class="tabs2">
+            <li>
+              <a class="active" href="villiYrttiseikkailu.html"
+                >Villi yrttiseikkailu</a
+              >
+            </li>
+            <li><a href="askBinny.html">Ask Binny</a></li>
+            <li><a href="aboutMe.html">About me</a></li>
+          </div>
+        </div>
+      </ul>
+      <div class="header">
+        <img
+          class="homeBanner"
+          src="./img/villiYrttiBanner.png"
+          alt="Drawing of weed on a night sky"
+          width="1690"
+          height="394"
+        />
+      </div>
+      <a href="#top">
+        <div class="arrow">
+          <span>&#8593;</span>
+        </div>
+      </a>
+      <div class="innerContent">
+        <div class="inThisCaseStudy">
+          <h3>In This Case Study:</h3>
+          <a href="#projectOverview"><li>Project Overview</li></a>
+          <a href="#problem"><li>Problem</li></a>
+          <a href="#solution"><li>Solution</li></a>
+          <a href="#wireframes"><li>Wireframes</li></a>
+          <a href="#informationArchitecture">
+            <li>Information Architecture</li>
+          </a>
+          <a href="#prototypes"><li>Prototypes</li></a>
+          <a href="#usabilityTesting"><li>Usability Testing</li></a>
+          <a href="#finalDesigns"><li>Final Designs</li></a>
+          <a href="#productSuccess"><li>Product Success</li></a>
+          <a href="#whatILearned"><li>What I Learned?</li></a>
+        </div>
+        <hr />
+        <div class="projectOverview" id="projectOverview">
+          <div class="overview">
+            <h2>Project Overview</h2>
+            <p>
+              Villi yrttiseikkailu is an Android mobile game available on the
+              Play Store. The game was produced in spring 2022. It is a part of
+              the annual Game Project of Business Information Systems first-year
+              studies. In 2022 the Game Project was a part of the VIRMA (Virtual
+              tourism) -project. The goal was to produce a mobile game for a
+              local business. 
+              <br />
+              <br />
+              Our project team’s client was a Tampere-based experience and
+              activity service business Villipihlaja Tmi. Villipihlaja offers a
+              range of services, including guided forest experiences, private
+              cruises, and wild herb courses. The game is based on
+              Villipihlaja’s Wild Vegetable online courses and was developed
+              using Unity with C# language and 2D graphics. 
+              <br />
+              <br />
+              Our project team consisted of four students, including two coders
+              and two graphic designers. As the scrum master and one of the
+              graphic designers, my responsibilities included documentation and
+              communication, gameplay planning, designing usability, and
+              creating graphics. Although programming wasn't initially part of
+              my role, I also studied C# during the project.
+              <br />
+              <br />
+              Overall, the project was a great learning experience for us,
+              and we're proud of the final product we delivered.
+            </p>
+            <div class="projectOverviewImgDiv">
+              <div class="projectOverviewImg">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.HortaGames.Villiyrttiseikkailu"
+                  target="_blank"
+                >
+                  <img
+                    class="playStoreImg"
+                    src="./img/google-play-badge.png"
+                    alt="Google Play badge"
+                    width="646"
+                    height="250"
+                  />
+                  <p>Download it from the Play Store</p>
+                </a>
+              </div>
+              <div class="projectOverviewImg">
+                <a href="https://webpages.tuni.fi/21tiko2f/" target="_blank">
+                  <img
+                    class="villiYrttiImg"
+                    src="./img/villiYrttiLogo.png"
+                    alt="Villi yrttiseikkailu logo"
+                    width="300"
+                    height="300"
+                  />
+                  <p>Visit Villi yrttiseikkailu's home page</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="myRole">
+            <h3>My Role</h3>
+            <li>Scrum Master</li>
+            <li>Graphic Designer</li>
+            <li>UI/UX Designer</li>
+          </div>
+        </div>
+        <hr />
+        <div class="problem" id="problem">
+          <h2>Problem</h2>
+          <p>
+            Initially, we had to determine what kind of game we were going to
+            create. For this reason, we had to understand our client's
+            requirements and expectations for the product. Using Unity and C#
+            programming language was a new experience for all of us. As a scrum
+            master, I coordinated meetings with our client throughout the
+            project.
+            <br />
+            After our first meeting with the client, we identified some primary
+            challenges that we needed to address:
+          </p>
+          <li>How can we make the game both educational and entertaining?</li>
+          <li>How can we make the game addictive?</li>
+          <li>How can we ensure that the educational content is accurate?</li>
+          <li>
+            How can we create a fresh look and feel that reflects the beauty of
+            Finnish nature?
+          </li>
+          <p>
+            The primary goal of our client was to develop a game that motivates
+            people to learn about nature and enjoy its serene environment.
+          </p>
+        </div>
+        <hr />
+        <div class="solution" id="solution">
+          <h2>Solution</h2>
+          <h3>Scrum Master's View</h3>
+          <p>
+            As a project team, we tackled the first two problems: How to make an
+            educational game, which is also entertaining and addicting?
+            Initially, we created five different game concepts and then narrowed
+            them down to the best three. We produced simplistic prototypes for
+            these three ideas. We then conducted a Forms survey, where we
+            introduced these prototypes to potential users
+            and collected feedback. The prototypes and feedback were
+            presented to our client, who assisted us in selecting the primary
+            game concept.
+            <br />
+            <br />
+            We decided to create an adventure game that takes place in Finnish
+            nature, where the player collects wild herbs. To add an educational
+            aspect to the game, we included a plant book with all the
+            information about wild herbs. By reading about the herbs and
+            learning from their actions in the game, the user can learn about
+            the herbs. We wanted to make the game entertaining for everyone, so
+            we let the users decide how much they want to "study" in the game.
+            To make the game addictive, we added scoring and a time limit. We
+            also made sure that the wild herbs grow in different places each
+            time you play the game. Additionally, the animals in the game will
+            say different things every time you interact with them, which adds
+            to the variability of the game. These features are important for
+            making the game enjoyable and engaging.
+            <br />
+            <br />
+            Once our game concept was completed, I was responsible for
+            writing the final game plan with our group as the scrum master. To
+            ensure that our project documentation was of high quality, I used
+            SMART criteria to help define our product backlog and sprint
+            schedules. Additionally, I created a RACI model with our team to
+            ensure that everyone was aware of their responsibilities. As part of
+            the risk management process, we conducted a risk analysis, where we
+            identified all the possible risks we might face and assessed their
+            potential impact on the project. I updated our risk analysis after
+            every sprint and also wrote our new schedules with sprint backlogs
+            while keeping our project documentation up-to-date. To stay on
+            track, I arranged daily meetings with our team and roughly one
+            meeting per sprint with our client.
+          </p>
+          <h3 class="subHeadline">Designer's View</h3>
+          <div class="learningTheWildHerbs">
+            <div class="learningTheWildHerbsText">
+              <h4>Learning The Wild Herbs</h4>
+              <p>
+                We ensured that the educational content was accurate through
+                collaboration with our client. I studied their wild herb courses
+                online and identified 21 plants for use in the game. I collected
+                and wrote information about these herbs, which our client
+                reviewed and accepted.
+                <br />
+                <br />
+                I also drew accurate wild herbs based on our client's images. It
+                was important that the drawings were recognizable and fit the
+                playful and colorful look of the game.
+              </p>
+            </div>
+            <div class="wildHerbImgDiv">
+              <img
+                class="wildHerbImg"
+                src="./img/kielo2.png"
+                alt="lily-of-the-walley"
+                width="265"
+                height="500"
+              />
+              <img
+                class="wildHerbImg"
+                src="./img/mansikka.png"
+                alt="strawberry"
+                width="265"
+                height="500"
+              />
+              <img
+                class="wildHerbImg"
+                src="./img/nokkonen.png"
+                alt="nettle"
+                width="265"
+                height="500"
+              />
+            </div>
+          </div>
+          <div class="characterDevelopment">
+            <div class="characterDevelopmentTextDiv">
+              <h4>Character Development</h4>
+              <p>
+                As part of our efforts to create an engaging and exciting game,
+                I wanted to give our characters a unique personality. To achieve
+                this, we created three playable characters, each representing a
+                mystical aspect of Finnish nature. These characters were
+                designed to provide players with greater depth in the game.
+                Additionally, we incorporated animals from Finnish nature into
+                the game as guides for players. 
+                <br />
+                <br />
+                These characters and animals were illustrated by our other
+                graphic designer. But to make them more lively, I animated them
+                using Unity. Additionally, I wrote individual speeches for each
+                animal, ranging from tips about the game to facts about wild
+                herbs, and even some funny puns.
+              </p>
+            </div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/jACCbjM7VcY?si=vWbBXV-xGvIa3Axv"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="lookAndFeelDiv">
+            <div class="lookAndFeelTextDiv">
+              <h4>The Look and Feel</h4>
+              <p>
+                To create a finished look and feel of Finnish nature, I added
+                some nature sounds in the background, such as birds singing and
+                bees flying around. In addition, I added some UX sounds, such as
+                clicking sounds when the user is pressing some of the menu
+                icons, ticking clock when the time is running out, and paper
+                sounds when the plant book is being opened.
+                <br />
+                <br />
+                I also wanted a finished UI look for the buttons I created. All
+                possible buttons are made with as little text as possible, but
+                so that they are still understandable.
+              </p>
+            </div>
+            <div class="lookAndFeelImgDiv">
+              <div class="buttonDiv">
+                <img
+                  class="buttonImg"
+                  src="./img/korinappi.png"
+                  alt="basket button"
+                  width="300"
+                  height="300"
+                />
+                <img
+                  class="buttonImg"
+                  src="./img/kirjanappi.png"
+                  alt="book button"
+                  width="300"
+                  height="300"
+                />
+              </div>
+              <img
+                class="bookBaseImg"
+                src="./img/kirja2.png"
+                alt="empty book"
+                width="787"
+                height="195"
+              />
+            </div>
+          </div>
+          <div class="finnishEnvironment">
+            <div class="finnishEnvironmentText">
+              <h4>Creating Finnish Environment</h4>
+              <p>
+                Once I gained knowledge about the various locations where wild
+                herbs grow, I proceeded to create a map for our game. I drew all
+                the levels along with their objects and decorations. To give it
+                a fresh and authentic look, I selected some traditional Finnish
+                objects and plants for the environment.
+                <br />
+                <br />
+                I also created all the other essential views for the game, such
+                as the main menu, the plant book, and the instructions.
+                Everything in the game is drawn using the same color palette
+                that I developed. By connecting these elements with Finnish wild
+                herbs, animals, and sounds, we have created the perfect Finnish
+                environment.
+              </p>
+            </div>
+            <img
+              class="finnishEnvironmentImg"
+              src="./img/villiYrttiScenery.png"
+              alt="example of a game scenery"
+              width="716"
+              height="507"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="wireframes" id="wireframes">
+          <h2>Wireframes</h2>
+          <p>
+            Initially, I created the game map as a wireframe which included
+            various areas for the growth of wild herbs that represent Finnish
+            nature. After that, I drew the final bases for each view. The six
+            designated areas are coniferous forest, suburb, village, meadow,
+            park, and deciduous forest.
+          </p>
+          <div class="wireframeImgDiv">
+            <img
+              class="wireframeImg"
+              src="./img/villiYrttiseikkailuWireframe.png"
+              alt="wireframe"
+              width="698"
+              height="511"
+            />
+            <img
+              class="wireframeImg"
+              src="./img/wireframeSceneries.png"
+              alt="wireframe"
+              width="698"
+              height="511"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="informationArchitecture" id="informationArchitecture">
+          <h2>Information Architecture</h2>
+          <p>
+            This is a map I did that depicts the architecture of the
+            application. There are eight different views in the game. When the
+            application is launched, the user is directed to the Main Menu. From
+            there, they can choose to start a new game, read instructions, check
+            information about the game, or exit the application.
+            <br />
+            <br />
+            If the user decides to start a new game, they will be able to select
+            their character. During the game, the user can access the plant
+            book, which allows them to open a specific plant and read about it.
+            They can also return to the Main Menu and access the same options as
+            before. The user can resume the game from there.
+            <br />
+            <br />
+            Once the timer runs out, the game ends, and the player is shown an
+            end screen. From that screen, the user can view their points, learn
+            more about the wild herbs, and return to the Main Menu.
+          </p>
+          <img
+            class="informationArchitectureImg"
+            src="./img/villiYrttiseikkailuInformationArchitecture.png"
+            alt="information architecture"
+            width="1365"
+            height="526"
+          />
+        </div>
+        <hr />
+        <div class="prototypes" id="prototypes">
+          <h2>Prototypes</h2>
+          <div class="prototypesDiv">
+            <div class="protypesTextDiv">
+              <h3>The First Prototype</h3>
+              <p>
+                We created the first prototype of the game view which showcases
+                the layout we have been working on. Our main objective was to
+                make the joystick button (for moving the character) easily
+                accessible, so we placed it on the bottom left. Similarly, we
+                placed the collect action (the basket) on the bottom right.
+                These two buttons are the primary actions required to play the
+                game. Therefore, we made sure they were big enough to use
+                effortlessly. On the top left, we decided to show the remaining
+                time and the points gathered. On the top right, we placed the
+                plant book.
+                <br />
+                <br />
+                In this prototype, you can also see some of the initial versions
+                of the wild herbs and the first playable character. To represent
+                the book and the joystick button, we used placeholders, which we
+                took inspiration from for the final versions.
+              </p>
+            </div>
+            <img
+              class="prototypeImg"
+              src="./img/villiYrttiPrototype.png"
+              alt="prototype of Villi yrttiseikkailu"
+              width="698"
+              height="400"
+            />
+          </div>
+          <div class="prototypesDiv">
+            <div class="protypesTextDiv">
+              <h3>The Second Prototype</h3>
+              <p>
+                In our playtests, we used the second prototype of our game. I
+                made some changes to this version, including replacing the
+                buttons with my own drawings and adding a final base to the
+                level which I drew in Unity. I also added some decorative
+                elements, like lamps, bushes, and benches. 
+                <br />
+                <br />
+                Furthermore, I added a home button to the game, which was
+                initially located on the left side and had a different
+                appearance than the other buttons. The points and time are still
+                displayed without any background.
+              </p>
+            </div>
+            <img
+              class="prototypeImg"
+              src="./img/villiYrttiPrototype2.png"
+              alt="prototype of Villi yrttiseikkailu"
+              width="698"
+              height="396"
+            />
+          </div>
+          <div class="prototypesDiv2">
+            <div class="protypesTextDiv">
+              <h3>The Book Prototype</h3>
+              <p>
+                I also designed the plant book, which served as a background for
+                some of our views in the game. Unfortunately, the plant book
+                prototype was too small to accommodate all the content we wanted
+                to include. Additionally, it had some usability issues, such as
+                the X-button being the same color as the pages.
+                <br />
+                <br />
+                The wild herb prototype, which was featured in the book, was
+                intended to be edible Goutweed. However, during a meeting with
+                our client, I discovered that it could be easily mistaken for
+                the extremely poisonous Cowbane. I suggested changing the
+                drawing, but after discussing the matter with our client, they
+                decided to keep it as is and rename it to Cowbane.
+              </p>
+            </div>
+            <img
+              class="prototypeBookImg"
+              src="./img/villiYrttiPrototypeBook.png"
+              alt="prototype of Villi yrttiseikkailu"
+              width="698"
+              height="482"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="usabilityTesting" id="usabilityTesting">
+          <h2>Usability Testing</h2>
+          <p>
+            Our team conducted a playtest with four different users. We planned
+            three relevant tasks that each test user had to complete. We also
+            created research questions for ourselves to keep track of.
+            Additionally, we wrote questions for the users to answer after the
+            testing ended. One of our team members took notes during the testing
+            process while I led the testing situation. I also interviewed the
+            test users after they had tried the game. During the test, we
+            refrained from giving any instructions to the testers or answering
+            any of their questions.
+            <br />
+            <br />
+            As a result of the testing, we identified three main issues:
+          </p>
+          <ol>
+            <li>
+              The plant book did not provide enough clear information about
+              the bad plants.
+            </li>
+            <li>
+              The users didn't receive sufficient feedback after they picked up
+              wild herbs.
+            </li>
+            <li>Navigation through different views was unclear.</li>
+          </ol>
+          <div class="usabilityDiv">
+            <div class="usabilityTextDiv">
+              <h3>1. The Plant Book Information Issue</h3>
+              <h4>A Warning Button</h4>
+              <p>
+                After testing, I added two new icons to the plant book.
+                <br />
+                The first icon is a red warning button which, when clicked,
+                opens a text box that informs the user that collecting the plant
+                will result in the loss of points. It is worth noting that these
+                plants are not meant to be used in real life either.
+              </p>
+            </div>
+            <img
+              class="usabilityImg"
+              src="./img/usabilityPlantBook1.jpg"
+              alt="Plant Book with improved usability"
+              width="800"
+              height="360"
+            />
+          </div>
+          <div class="usabilityDiv">
+            <div class="usabilityTextDiv">
+              <h4>An Info Button</h4>
+              <p>
+                The second icon is an info button which is used to indicate any
+                usage restrictions of a wild herb in real life. When the user
+                clicks on this button, a text box appears with details regarding
+                the specific restrictions of the herb. These plants may be used
+                in real life but with certain restrictions. The player will get
+                points after collecting them.
+              </p>
+            </div>
+            <img
+              class="usabilityImg"
+              src="./img/usabilityPlantBook2.jpg"
+              alt="Plant Book with improved usability"
+              width="800"
+              height="360"
+            />
+          </div>
+          <div class="usabilityDiv2">
+            <div class="usabilityTextDiv2">
+              <h3>2. The Scoring Feedback Issue</h3>
+              <p>
+                After the user picks up a plant, the plant's name will appear on
+                the screen. If the plant is unhealthy, the user will see a
+                negative number in red color appear on the screen. Their
+                character will also appear sad or sick. Additionally, a
+                corresponding sound effect will be played. On the other hand, if
+                the plant is healthy, a green number will appear on the screen.
+              </p>
+            </div>
+            <img
+              class="usabilityImg2"
+              src="./img/usabilityScoring1.png"
+              alt="Screenshot of improved user feedback"
+              width="550"
+              height="540"
+            />
+            <img
+              class="usabilityImg3"
+              src="./img/usabilityScoring2.png"
+              alt="Screenshot of improved user feedback"
+              width="550"
+              height="540"
+            />
+          </div>
+          <div class="usabilityDiv">
+            <div class="usabilityTextDiv">
+              <h3>3. The Navigation Issue</h3>
+              <p>
+                To improve navigation, I added paths leading to the connection
+                points. These paths are designed to help you easily move around
+                the area without getting lost. Secondly, I created signposts in
+                strategic locations to provide clear directions and information
+                on which areas are where. With these changes, I believe that
+                the overall navigation experience will be much smoother and more
+                efficient for everyone.
+              </p>
+            </div>
+            <img
+              class="usabilityImg"
+              src="./img/usabilityNavigation.jpg"
+              alt="Screenshot of improved navigation"
+              width="800"
+              height="360"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="finalDesigns" id="finalDesigns">
+          <h2>Final Designs</h2>
+          <div class="finalDesignDiv">
+            <div class="finalDesignTextDiv">
+              <h3>The Game View</h3>
+              <p>
+                The final version of the game contains all the features from the
+                initial prototype and some newly added ones. I created a new
+                Home Menu button and placed it beside the plant book button.
+                Additionally, I ensured that all the user interface buttons have
+                consistent style and background to enhance their visibility. I
+                also changed the joystick button to have a more universal
+                appearance. 
+                <br />
+                <br />
+                Furthermore, I used the same color palette for all graphics. The
+                plants now spawn randomly throughout the levels, providing a
+                unique gaming experience every time. Additionally, the animals
+                now communicate with the user and provide helpful tips.
+              </p>
+            </div>
+            <div class="finalDesingsImgDiv">
+              <img
+                class="finalDesignImg"
+                src="./img/finalDesign1.jpg"
+                alt="Screenshot of final design"
+                width="800"
+                height="360"
+              />
+            </div>
+          </div>
+          <div class="finalDesignDiv">
+            <div class="finalDesignTextDiv">
+              <h3>The Book View</h3>
+              <p>
+                I made some updates to the final book design. The plant book is
+                now bigger and has a flatter base to accommodate more text. I
+                selected fonts that complement our handmade and natural style.
+                It was crucial to choose a readable font and keep our
+                information concise.
+                <br />
+                <br />
+                I also enhanced the buttons with more color to improve their
+                appearance. Additionally, the final design includes the new
+                information buttons on each plant page.
+              </p>
+            </div>
+            <div class="finalDesingsImgDiv">
+              <img
+                class="finalDesignImg"
+                src="./img/finalDesign2.jpg"
+                alt="Screenshot of final design"
+                width="800"
+                height="360"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="productSuccess" id="productSuccess">
+          <div class="productSuccessTextDiv">
+            <h2>Product Success</h2>
+            <p>
+              Villi Yrttiseikkailu won the vote for the best game of our game
+              project course of the year. We received fantastic feedback on the
+              graphics and details. Our client from Villipihlaja
+              was extremely pleased with the project and its outcome. The
+              representative of the VIRMA project praised our team's
+              performance, and our training team's coach congratulated us on our
+              project.
+              <br />
+              <br />
+              The game received a lot of positive feedback about its graphics
+              and details from guests at the game fair. Our graphic design
+              expert teacher also mentioned Villi Yrttiseikkailu at the fair.
+              Even Ubisoft's representative announced that he voted for our
+              game.
+              <br />
+              <br />
+              The game now has over 100 downloads on the Play Store and has
+              received a review of 4.8 stars out of 5.
+            </p>
+            <img
+              class="productSuccessImg"
+              src="./img/starRating.png"
+              alt="4,8 out of 5 stars"
+              width="240"
+              height="48"
+            />
+          </div>
+          <img
+            class="productSuccessImg2"
+            src="./img/FeedbackVilliYrtti.png"
+            alt="Feedback speak bubbles"
+            width="698"
+            height="637"
+          />
+        </div>
+        <hr />
+        <div class="whatILearned" id="whatILearned">
+          <div class="whatILearnedTextDiv">
+            <h2>What I Learned?</h2>
+            <p>
+              Throughout this project, I gained valuable experience in working
+              on an agile project. I honed my communication skills by
+              effectively engaging with both the client and the project team.
+              Additionally, I learned how to organize and lead meetings, as well
+              as create and deliver presentations. I also developed the ability
+              to schedule and prioritize a project’s backlog, and produce
+              essential project documentation.
+              <br />
+              Moreover, I acquired new skills in creating and animating 2D
+              graphics using Unity, Adobe Photoshop, and Gimp. I also got to
+              know the fundamentals of the C# language and gained insights into
+              mobile UI/UX design.
+            </p>
+          </div>
+          <div class="keySkills">
+            <h3>Key Skills</h3>
+            <li>Agile working</li>
+            <li>Usability</li>
+            <li>Communication skills</li>
+            <li>Documentation</li>
+            <li>Gimp</li>
+            <li>Unity</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>This is Ella Kataja's homepage</p>
+        <p>Images used on the page are made and owned by Ella Kataja</p>
+        <p>Google Play and the Google Play logo are trademarks of Google LLC</p>
+        <p>2024</p>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("tabs2");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

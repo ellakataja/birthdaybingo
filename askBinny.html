@@ -1,0 +1,695 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ella Kataja Portfolio</title>
+    <link rel="icon" href="./img/EEK-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/085184ff6d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="content" id="top">
+      <ul class="navbar">
+        <div class="tabs">
+          <li><a href="index.html">Home</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+          <div id="tabs2" class="tabs2">
+            <li>
+              <a href="villiYrttiseikkailu.html">Villi yrttiseikkailu</a>
+            </li>
+            <li><a class="active" href="askBinny.html">Ask Binny</a></li>
+            <li><a href="aboutMe.html">About me</a></li>
+          </div>
+        </div>
+      </ul>
+      <div class="header">
+        <img
+          class="homeBanner"
+          src="./img/askBinnyBanner.png"
+          alt="Ask Binny banner"
+          width="1690"
+          height="394"
+        />
+      </div>
+      <a href="#top">
+        <div class="arrow">
+          <span>&#8593;</span>
+        </div>
+      </a>
+      <div class="innerContent">
+        <div class="inThisCaseStudy2">
+          <h3>In This Case Study:</h3>
+          <a href="#projectOverview"><li>Project Overview</li></a>
+          <a href="#problem"><li>Problem</li></a>
+          <a href="#solution"><li>Solution</li></a>
+          <a href="#wireframes"><li>Wireframes</li></a>
+          <a href="#informationArchitecture">
+            <li>Information Architecture</li>
+          </a>
+          <a href="#prototypes"><li>Prototypes</li></a>
+          <a href="#usabilityTesting"><li>Usability Testing</li></a>
+          <a href="#finalDesigns"><li>Final Designs</li></a>
+          <a href="#productSuccess"><li>Product Success</li></a>
+          <a href="#whatILearned"><li>What I Learned?</li></a>
+        </div>
+        <hr />
+        <div class="projectOverview" id="projectOverview">
+          <div class="overview">
+            <h2>Project Overview</h2>
+            <p>
+              Ask Binny is a recycling website that was created as part of an
+              annual collaborative project between TAMK and Munich University.
+              The website was produced in the fall of 2023 with the goal of
+              producing a software product for a given client company.
+              <br />
+              <br />
+              Our project team's client was TAMK's waste management department.
+              Our team consisted of four software development students from TAMK
+              and seven business students from Munich. I worked as a frontend
+              developer alongside another student. Additionally, I was
+              responsible for UX/UI design. The Ask Binny frontend was
+              implemented using React, JavaScript, HTML/CSS. Its backend was
+              implemented using MySQL and Node.js. It is currently running on
+              AWS.
+              <br />
+              <br />
+              In this case study, I will mainly focus on my involvement with the
+              project. However, since I worked on this project with others, I
+              will also cover some important topics regarding the project as a
+              whole.
+            </p>
+            <div class="projectOverviewImgDiv">
+              <div class="projectOverviewImg">
+                <a href="http://3.76.225.34/askBinny" target="_blank">
+                  <img
+                    class="binnyLogo"
+                    src="./img/BinnyLogoNew.png"
+                    alt="Ask Binny Logo"
+                    width="550"
+                    height="200"
+                  />
+                  <p>Visit Ask Binny's website</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="myRole">
+            <h3>My Role</h3>
+            <li>Frontend Developer</li>
+            <li>UI & UX Designer</li>
+          </div>
+        </div>
+        <hr />
+        <div class="problem" id="problem">
+          <h2>Problem</h2>
+          <p>
+            In the beginning, we needed to determine what type of product we
+            would be developing. We had to get to know our client and their
+            requirements for the product. The programming team had to decide
+            which language and tools would be best suited for the product.
+            <br />
+            <br />
+            Our client had their recycling information webpage, which was only
+            accessible by logging in with our school's login credentials.
+            Moreover, the webpage was a lengthy block of text that was unlikely
+            to engage a lot of people. After implementing our own customer
+            survey, we found out that none of the students were aware of the
+            webpage, despite our client's belief to the contrary.
+            <br />
+            <br />
+            Upon meeting with our client, we identified some key issues that
+            needed to be addressed:
+          </p>
+          <li>How can we encourage students to recycle more? </li>
+          <li>How can we identify the reasons for the low recycling rates? </li>
+          <li>
+            How can we make the product easily accessible and informative to
+            users?
+          </li>
+          <p>
+            Our client's main objective was to create a product that would
+            encourage recycling on campus.
+          </p>
+        </div>
+        <hr />
+        <div class="solution" id="solution">
+          <h2>Solution</h2>
+          <h3>Project Working</h3>
+          <p>
+            Our project started with a kick-off, where we did an empathy map and
+            prepared questions for our client meetings. We started working
+            backwards to figure who are our client and customers, and what is
+            our problem. Because our we needed more information about our
+            client’s customers, I contributed a Forms based customer research
+            with another team member. We defined some base questions for the
+            survey and processed the data we received. Our team also did a crazy
+            eight, to figure out our big idea. And we also did a storyboard to
+            represent the customer problem and the benefit. I wrote an FAQ about
+            the most likely user questions. Our client told us, that one of
+            their goals is to meet the EcoCompass criteria. I studied the
+            EcoCompass criteria and taught our team about it. From this base, we
+            started to contribute our final product.
+            <br />
+            <br />
+            We had meetings every other day with the whole team, and in every
+            sprint with the client. I partitioned and scheduled the front end
+            developers product backlog items. I was also in charge of explaining
+            the development process to the business side of the team. And I was
+            the contact person between our team and the Finnish teachers.
+            <br />
+            <br />
+            At the end of the project I participated in our project technical
+            and final documentation. I wrote about our products informational
+            architecture, code structure, product maintenance and installation,
+            and system modification to our technical documentation. For our
+            final documentation I wrote about our project overview, end
+            products, workload, schedules, and customer satisfaction.
+          </p>
+          <h3 class="subHeadline">Frontend Development</h3>
+          <p>
+            As a team of front-end developers, we collectively decided to use
+            JavaScript and React for our website. Our decision was based on our
+            desire to create an interactive website that could be further
+            developed in the future. Additionally, we were already familiar with
+            JavaScript and React from our prior studies. During development, we
+            used GitHub Pages for testing purposes since we didn't have access
+            to AWS at the time.
+            <br />
+            <br />
+
+            My responsibilities were to build the foundation for each page using
+            HTML and CSS. After that, I used JavaScript and React to connect the
+            database created by our back-end developers to the front-end we had
+            designed. I fetched all the pictures, texts, and maps related to the
+            waste types for the front-end to display. On the Front Page, I added
+            a sorting button as our initial idea of a search bar was dismissed.
+            Additionally, I made the website responsive so that it can scale for
+            computers and mobile phones. This involved making some user
+            interface changes, such as modifying the navigation system. Lastly,
+            I made sure to take care of the usability and user interfaces. I
+            achieved this by creating pop-ups and using CSS to provide users
+            with more highlighted feedback about their actions.
+          </p>
+          <div class="uiAndUxDesign">
+            <div class="uiAndUxDesignText">
+              <h3>Usability and User Interface Design</h3>
+              <p>
+                I was responsible for creating a Figma prototype for our
+                project. Initially, I created a prototype for mobile and once
+                our team was satisfied with the structure and features, I also
+                designed a desktop version. I will share more details about the
+                design project later in this case study.
+                <br />
+                <br />
+                Our goal was to align the visual appearance with the Tampere
+                Universities brand and add an interesting Ask Binny mascot. I
+                created a color palette and drew the Binny mascot to achieve
+                this.
+              </p>
+            </div>
+            <div class="uiAndUxDesignImg">
+              <img
+                class="binnyColors"
+                src="./img/colorsheet.PNG"
+                alt="Ask Binny Colors"
+                width="1430"
+                height="695"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="wireframes" id="wireframes">
+          <h2>Wireframes</h2>
+          <p>
+            After identifying the main features of our website, I began creating
+            some wireframe examples. We ultimately decided on a plan that
+            includes four key views: the Front Page, a Waste Type Page, a Waste
+            Map Page, and an Info Page. On the Front Page, we made it a priority
+            to present the user with the main feature right away - the option to
+            select the type of waste they are searching for. Once a
+            user selects a waste type, they are taken to the Waste
+            Type page where they will receive information about that particular
+            waste. From there, they can proceed to the Waste Map page, where
+            they will be presented with a map displaying the locations of waste
+            bins on campus. Additionally, we decided to include an Info page
+            where users can access FAQs and other important information about
+            the website.
+          </p>
+          <div class="wireframeImgsDiv">
+            <div class="askBinnyWireframeImg">
+              <img
+                class="binnyWireframe"
+                src="./img/wireframe1.png"
+                alt="Ask Binny Mobile Front Page Wireframe"
+                width="555"
+                height="1027"
+              />
+              <p>The Front Page</p>
+            </div>
+            <div class="askBinnyWireframeImg">
+              <img
+                class="binnyWireframe"
+                src="./img/wireframe2.png"
+                alt="Ask Binny Mobile Waste Type Page Wireframe"
+                width="555"
+                height="1027"
+              />
+              <p>The Waste Type Page</p>
+            </div>
+            <div class="askBinnyWireframeImg">
+              <img
+                class="binnyWireframe"
+                src="./img/wireframe3.png"
+                alt="Ask Binny Mobile Waste Map Page Wireframe"
+                width="555"
+                height="1027"
+              />
+              <p>The Waste Map Page</p>
+            </div>
+            <div class="askBinnyWireframeImg">
+              <img
+                class="binnyWireframe"
+                src="./img/wireframe4.png"
+                alt="Ask Binny Mobile Info Page Wireframe"
+                width="555"
+                height="1027"
+              />
+              <p>The Info Page</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="informationArchitecture" id="informationArchitecture">
+          <h2>Information Architecture</h2>
+          <p>
+            This image showcases the final information architecture of the Ask
+            Binny website. The buttons represent all the possible actions and
+            movements a user can make on the website. Each page has the same
+            navigation bar, footer, and logo, providing consistency across the
+            site. The navigation bar enables users to move around the website
+            more freely. For instance, if a user does not want to select a waste
+            type, they can quickly navigate to the Waste Map page.
+          </p>
+          <img
+            class="binnyInformationArchitectureImg"
+            src="./img/askBinnyInformationArchitecture.png"
+            alt="Ask Binny Information Architecture"
+            width="994"
+            height="1017"
+          />
+        </div>
+        <hr />
+        <div class="prototypes" id="prototypes">
+          <h2>Prototypes</h2>
+          <div class="prototypesDiv">
+            <div class="protypesTextDiv">
+              <h3>The First Prototype</h3>
+              <p>
+                We have two front page prototypes featuring a mockup mascot,
+                Binny the Bin. The first prototype was the one we chose to use.
+                In addition for the waste images, it includes a map button that
+                is visible at all times. However, both prototypes were designed
+                with the possibility of adding more waste types in the future.
+                <br />
+                <br />
+                The second prototype on the left was dismissed due to its use of
+                dropdowns, which didn't optimize the available space
+                effectively. We believe that images of the waste types would be
+                more efficient than a dropdown with numerous options.
+                <br />
+                <br />
+                Our goal was to make everything accessible to the user on the
+                front page, considering that this website is designed primarily
+                for mobile use but should also be functional on laptops and
+                desktops. As a result, we had to consider how we used the
+                available space.
+              </p>
+            </div>
+            <img
+              class="binnyPrototypeImg"
+              src="./img/prototypeFrontPage1.png"
+              alt="Ask Binny Mobile Front Page Prototype"
+              width="368"
+              height="800"
+            />
+            <img
+              class="binnyPrototypeImg"
+              src="./img/prototypeFrontPage2.png"
+              alt="Ask Binny Mobile Front Page Prototype"
+              width="368"
+              height="800"
+            />
+          </div>
+          <div class="prototypesDiv">
+            <div class="protypesTextDiv">
+              <h3>The Second Prototype</h3>
+              <p>
+                I have a couple examples of the color schemes I was testing for
+                the prototype. Please note that the waste images used in these
+                pictures are only placeholders for visualization purposes. In
+                this prototype, I have included a search icon for the waste
+                types. This way, users can choose from many options or search to
+                find their waste faster.
+                <br />
+                <br />
+                I have also made a few changes to balance the visuals. I moved
+                the mascot from the way to the logo at the top and moved the
+                hamburger menu to the left. Additionally, I removed the map
+                button from the first view, as users will be directed there
+                after choosing a waste or navigating through the menu.
+              </p>
+            </div>
+            <img
+              class="binnyPrototypeImg"
+              src="./img/prototypeColors1.png"
+              alt="Ask Binny Colored Prototype"
+              width="382"
+              height="786"
+            />
+            <img
+              class="binnyPrototypeImg"
+              src="./img/prototypeColors2.png"
+              alt="Ask Binny Colored Prototype"
+              width="382"
+              height="786"
+            />
+          </div>
+          <div class="prototypesDiv2">
+            <div class="protypesTextDiv">
+              <h3>The Mascot Prototype</h3>
+              <p>
+                I sketched some prototypes of Binny the Bin for our team. After
+                due consideration, we decided to use the one in the middle, but
+                with the eyes from the one on the left. Our team collectively
+                agreed to keep the hands on Binny since it made the character
+                more expressive and versatile.
+              </p>
+            </div>
+            <img
+              class="binnyPrototypeImg2"
+              src="./img/binnyDraft.PNG"
+              alt="Ask Binny mascot prototypes"
+              width="737"
+              height="361"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="usabilityTesting" id="usabilityTesting">
+          <h2>Usability Testing</h2>
+          <h3>Usability Test Results</h3>
+          <p>
+            I conducted usability testing for a website with multiple users
+            using their mobile devices. The users were asked to perform basic
+            interactions on the website.
+            <br />
+            <br />
+            During the testing, I discovered three major issues:
+          </p>
+          <ol>
+            <li>Some text on Apple devices appeared in blue color.</li>
+            <li>
+              There were responsiveness issues with the hamburger menu and some
+              of the images were not displaying properly.
+            </li>
+            <li>
+              The sorting button was not labeled properly, causing confusion
+              among the users.
+            </li>
+          </ol>
+          <div class="askBinnyUsabilityImgsDiv">
+            <div class="askBinnyIssueDiv">
+              <img
+                class="binnyUsabilityImg"
+                src="./img/problems1.png"
+                alt="Ask Binny Usability Issue 1"
+                width="474"
+                height="1027"
+              />
+              <p>
+                Issue: <br />
+                1. Text color issue on Apple device
+              </p>
+            </div>
+            <div class="askBinnyIssueDiv">
+              <img
+                class="binnyUsabilityImg"
+                src="./img/problems2-3.png"
+                alt="Ask Binny Usability Issues 2-3"
+                width="474"
+                height="1027"
+              />
+              <p>
+                Issues: <br />
+                2. Hamburger menu issue, and some of the waste types are not in
+                line
+                <br />
+                3. Sorting button label issue
+              </p>
+            </div>
+            <div class="askBinnyIssueDiv">
+              <img
+                class="binnyUsabilityImg"
+                src="./img/solutions.png"
+                alt="Ask Binny Usability Issues Solved"
+                width="474"
+                height="1027"
+              />
+              <p>
+                Solutions: <br />
+                1. Text has been fixed with extra css
+                <br />
+                2. Responsiveness has been fixed with better css
+                <br />
+                3. Sorting button has better label, that changes from a-z to z-a
+              </p>
+            </div>
+          </div>
+          <div class="askBinnyUsabilityDiv2">
+            <div class="askBinnyUsabilityText">
+              <h3>Testing During Development</h3>
+              <p>
+                Our team initially planned to showcase Binny the Bin on the
+                front page of our website. The original plan was to have Binny
+                occupy the entire screen upon opening the website. The
+                background was intended to be dimmed, and Binny would disappear
+                upon clicking. The reason for this was to have a text tutorial
+                at the beginning. However, we later decided to abandon this idea
+                as it would have resulted in unnecessary waiting and clicking
+                for the users. In my opinion, good usability should be intuitive
+                even without text instructions.
+                <br />
+                <br />
+
+                Another idea our team had was to keep the footer visible at all
+                times, even when the page had scrollable content. This concept
+                is also visible in the attached picture. However, after testing
+                our Figma prototype and the actual website with these features,
+                we decided to discard these plans. As the main designer of the
+                project, I was happy about this decision because it would have
+                taken unnecessary space from the actual content.
+              </p>
+            </div>
+            <img
+              class="binnyUsabilityImg2"
+              src="./img/prototypeBinny.png"
+              alt="Ask Binny Usability Example"
+              width="400"
+              height="831"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="finalDesigns" id="finalDesigns">
+          <div class="askBinnyFinalDesignDiv">
+            <h2>Final Designs</h2>
+            <h3>Mobile View</h3>
+            <p>
+              In order, the three mobile pages are: The Front Page, the Waste
+              Type Page, and the Map Page. All the pages have the same header
+              and navigation bar. We decided to reduce the number of waste types
+              on our website, so I replaced the search button with a sorting
+              button. The waste types we used were based on the results of our
+              own user survey. These waste types caused the most puzzlement
+              among the students and the staff.
+              <br />
+              <br />
+              I was responsible for implementing the sorting button and fetching
+              the images for each page from the backend to the frontend. I also
+              created all the pages in HTML and CSS. The last image shows some
+              of the usability features I added, such as highlighting the
+              current floor and waste type to help the user navigate the site.
+              By default, the website displays the first floor along with every
+              waste type.
+            </p>
+            <div class="askBinnyFinalDesignsImgDiv">
+              <img
+                class="binnyFinalDesignsImg"
+                src="./img/askBinnyFinalDesign1.png"
+                alt="Ask Binny Final Design"
+                width="400"
+                height="889"
+              />
+              <img
+                class="binnyFinalDesignsImg"
+                src="./img/askBinnyFinalDesign2.png"
+                alt="Ask Binny Final Design"
+                width="400"
+                height="889"
+              />
+              <img
+                class="binnyFinalDesignsImg"
+                src="./img/askBinnyFinalDesign3.png"
+                alt="Ask Binny Final Design"
+                width="400"
+                height="889"
+              />
+              <img
+                class="binnyFinalDesignsImg"
+                src="./img/askBinnyFinalDesign4.png"
+                alt="Ask Binny Final Design"
+                width="400"
+                height="889"
+              />
+            </div>
+            <div class="askBinnyFinalDesignDesktopDiv">
+              <div class="askBinnyFinalDesignText">
+                <h3>Desktop View</h3>
+                <p>
+                  Here is the final look for the Front Page when viewed on a
+                  computer. It is similar to the mobile version, but instead of
+                  three products in a row, there are now four, and the product
+                  images are larger. In addition, the hamburger menu has been
+                  changed to a navigation bar.
+                </p>
+              </div>
+              <div class="finalDesignImgs">
+                <img
+                  class="binnyFinalDesignsImg2"
+                  src="./img/askBinnyFinalDesign5.png"
+                  alt="Ask Binny Final Design"
+                  width="1685"
+                  height="804"
+                />
+              </div>
+            </div>
+            <div class="askBinnyFinalDesignDesktopDiv">
+              <div class="askBinnyFinalDesignText">
+                <p>
+                  This is the final look for the Map Page. When scrolling down,
+                  the entire map will be displayed along with the waste type
+                  filters and the Done Button. Finally, the footer will appear
+                  at the bottom. The Map Page on a computer is also similar to
+                  the mobile version, but with the filters located next to the
+                  Done Button and larger images.
+                </p>
+              </div>
+              <div class="finalDesignImgs">
+                <img
+                  class="binnyFinalDesignsImg2"
+                  src="./img/askBinnyFinalDesign6.png"
+                  alt="Ask Binny Final Design"
+                  width="1629"
+                  height="764"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="productSuccess" id="productSuccess">
+          <div class="productSuccessTextDiv">
+            <h2>Product Success</h2>
+            <p>
+              Our client expressed great satisfaction with the final product.
+              The project team received positive feedback from teachers in both
+              Finland and Germany. The team leader was pleased with the good
+              atmosphere and work ethics of the team.
+              <br />
+              <br />
+              The product is currently running on AWS and will be used in TAMK's
+              orientation program for new students. It is available for everyone
+              to use without any registration.
+              <br />
+              <br />
+              I got excellent grade from the project.
+            </p>
+            <img
+              class="binnyTheBin"
+              src="./img/binnyVersion1.png"
+              alt="Ask Binny Mascot"
+              width="829"
+              height="999"
+            />
+          </div>
+          <img
+            class="askBinnyFeedback"
+            src="./img/feedback.png"
+            alt="Ask Binny Feedback"
+            width="698"
+            height="657"
+          />
+        </div>
+        <hr />
+        <div class="whatILearned" id="whatILearned">
+          <div class="whatILearnedTextDiv">
+            <h2>What I Learned?</h2>
+            <p>
+              Throughout this project, I gained a great deal of experience
+              working remotely. Our project team consisted of members from
+              different countries and we had to rely solely on virtual meetings.
+              This helped me understand the importance of organizing my work
+              schedule and keeping track of my work hours. I also learned how to
+              better estimate the time required to complete various tasks.
+              Working in a multicultural team gave me the opportunity to improve
+              my English language skills.
+              <br />
+              <br />
+              In terms of development, I enhanced my knowledge regarding
+              connecting front-end and back-end systems using JavaScript and
+              React. I gained a better understanding of CSS and its
+              complexities, especially in relation to responsiveness and
+              layouts. I also realized the significance of good design planning,
+              which ultimately saves a significant amount of time during the
+              coding process.
+            </p>
+          </div>
+          <div class="keySkills">
+            <h3>Key Skills</h3>
+            <li>Agile methods</li>
+            <li>UI & UX Design</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>HTML/CSS</li>
+            <li>Graphic Design</li>
+            <li>English skills</li>
+            <li>Documentation</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>This is Ella Kataja's homepage</p>
+        <p>Images used on the page are made and owned by Ella Kataja</p>
+        <p>Google Play and the Google Play logo are trademarks of Google LLC</p>
+        <p>2024</p>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("tabs2");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
