@@ -665,10 +665,6 @@ li a:hover:not(.active),
     margin-top: 20px;
   }
 
-  .informationArchitectureImg {
-    margin-top: 20px;
-  }
-
   .prototypesDiv {
     display: flex;
     flex-direction: row;
