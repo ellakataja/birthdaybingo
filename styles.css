@@ -134,6 +134,7 @@ li a:hover:not(.active),
 
 .homePageInnerContent a {
   text-decoration: none;
+  color: #111;
 }
 
 .homePageInnerContent a:visited {
@@ -152,6 +153,11 @@ li a:hover:not(.active),
 .sneakPeek a {
   text-decoration: none;
   height: fit-content;
+  color: #111;
+}
+
+.sneakPeek a:visited {
+  color: #111;
 }
 
 .sneakPeek .miniText {
@@ -170,6 +176,11 @@ li a:hover:not(.active),
 
 .aboutMeSneakPeek a {
   text-decoration: none;
+  color: #111;
+}
+
+.aboutMeSneakPeek a:visited {
+  color: #111;
 }
 
 .headImg {
